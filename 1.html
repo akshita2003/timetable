@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login Form</title>
+</head>
+<body>
+  <form onsubmit="return validateForm()" method="post">
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password">
+    <button type="submit">Login</button>
+  </form>
+
+  <script>
+    function validateForm() {
+  var password = document.getElementById("password").value;
+  var passwordPattern = /^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[!@#$%^&*]).{8,}$/;
+
+  if (!password.match(passwordPattern)) {
+    alert("Password must contain at least 8 characters, including uppercase, lowercase, digits, and special characters.");
+    return false; // Prevent form submission
+  }
+
+  // Password format is valid, allow form submission
+  return true;
+}
+  </script>
+</body>
+</html>

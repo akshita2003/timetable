@@ -1,0 +1,64 @@
+*
+*::before,
+*::after {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+html,
+body,
+input,
+button {
+  font-family: 'Muli', sans-serif, -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif;
+  outline: none;
+}
+body {
+    margin: 0;
+    padding: 0;
+    color: #222222;
+    /* background-color: #2a9df4; */
+    background-image: url("imge1.png");
+    background-color: rgba(121, 121, 121, 0.445);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment:fixed;
+    padding: 20px;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10%;
+    
+
+    
+    
+    
+  }
+  .admin{
+    height:350px;
+    width: 1000px;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: aliceblue;
+    margin: 50px;
+    align-items: center;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.389), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    opacity: 1;
+    position :sticky;
+    top:10px;
+  
+    
+  
+    
+     
+  }
+ .image{
+  height:200px;
+  width: 200px;
+ }
+ .link{
+  text-decoration: none;
+  color: black;
+ }
